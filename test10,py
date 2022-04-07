@@ -1,0 +1,17 @@
+from re import A
+
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+
+def middle_value(a,b,c):
+    if(b>=a and c<=a) or (b<=a and c>=a):
+        return a
+    elif(a>b and c<b) or (a<b and c>b):
+        return b
+    else:
+        return c
+    
+print(middle_value)
